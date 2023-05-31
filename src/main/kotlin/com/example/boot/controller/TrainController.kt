@@ -21,7 +21,7 @@ class TrainController {
     }
 
     @GetMapping("/{id}")
-    fun getTrainById(@PathVariable Long id): ResponseEntity<TrainResponse>? {
+    fun getTrainById(@PathVariable id: Long): ResponseEntity<TrainResponse>? {
         val trainResponse: TrainResponse = trainService.getTrainById(id);
         if (trainResponse == null) {
             println("Train with id " + id + " not found")
