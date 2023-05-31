@@ -1,6 +1,7 @@
 package com.example.boot.controller
 
 import com.example.boot.dto.WayRequest
+import com.example.boot.dto.WayResponse
 import com.example.boot.svc.impl.WayServiceImpl
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
